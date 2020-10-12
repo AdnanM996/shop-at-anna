@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@keyframes active {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -38,7 +44,7 @@ body {
 
 .banner--text {
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -53,6 +59,65 @@ body {
   .bag-area--text .fa-user,
   .bag-area--text .fa-shopping-bag {
     margin-left: 1.6rem; }
+
+.top {
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: uppercase; }
+
+.title {
+  font-size: 5.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: capitalize; }
+
+.text {
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 2.5rem; }
+
+.cta {
+  display: inline-block;
+  background-color: #121212;
+  border: 2px solid #121212;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s ease; }
+  .cta:hover {
+    background-color: #fff;
+    color: #121212; }
+
+.slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  align-items: center; }
+  .slide__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 60%; }
+  .slide__img {
+    overflow: hidden;
+    transform: translateY(5rem);
+    height: 800px;
+    width: 100%; }
+    .slide__img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.active {
+  animation: active .5s ease; }
+
+.slider__container {
+  display: flex;
+  align-items: center; }
 
 .header {
   border-bottom: 1px solid #e9e9de;

@@ -1,0 +1,36 @@
+.slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 60%;
+    }
+
+    &__img {
+        overflow: hidden;
+        transform: translateY(5rem);
+        height: 800px;
+        width: 100%;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.active {
+    animation: active .5s ease;
+}
+
+.slider__container {
+    display: flex;
+    align-items: center;
+}
