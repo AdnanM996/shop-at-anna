@@ -1,0 +1,52 @@
+.header {
+    border-bottom: 1px solid $light-grey;
+    padding: $padding-small;
+
+    & .wrapper {
+        @include space-between-center;
+    }
+
+    & .search-box {
+        display: flex;
+        @include space-between-center;
+
+        & .fa-search {
+            font-size: 2rem;
+            margin-right: 1.6rem;
+        }
+
+        & .search {
+            background-color: $white;
+            border: none;
+            color: rgba($black, .5);
+            font-family: 'Roboto', sans-serif;
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 500;
+            outline-width: 0;
+            padding: 1rem 0rem;
+
+            &::placeholder {
+                color: rgba($black, .5);
+                display: inline-block;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    & .logo-container {
+        & a img {
+            height: 3.6rem;
+        }
+    }
+
+    & .bag-area {
+        display: flex;
+        @include space-between-center;
+
+        & .account {
+            margin-right: 5rem;
+        }
+    }
+}

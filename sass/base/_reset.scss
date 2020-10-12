@@ -14,6 +14,10 @@ body {
 .banner {
     background-color: $black;
     padding: 1rem 0rem;
+    
+    & .wrapper {
+        justify-content: center;
+    }
 }
 
 .wrapper {
@@ -21,4 +25,10 @@ body {
     margin: 0% auto;
     width: 90%;
     max-width: 1350px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
 }

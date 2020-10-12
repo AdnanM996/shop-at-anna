@@ -13,12 +13,19 @@ body {
 .banner {
   background-color: #121212;
   padding: 1rem 0rem; }
+  .banner .wrapper {
+    justify-content: center; }
 
 .wrapper {
   display: flex;
   margin: 0% auto;
   width: 90%;
   max-width: 1350px; }
+
+img {
+  height: 100%;
+  width: 100%;
+  vertical-align: bottom; }
 
 html {
   font-size: 62.5%; }
@@ -36,3 +43,50 @@ body {
   text-align: center;
   text-transform: uppercase;
   line-height: 1.6; }
+
+.bag-area--text {
+  color: #121212;
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize; }
+  .bag-area--text .fa-user,
+  .bag-area--text .fa-shopping-bag {
+    margin-left: 1.6rem; }
+
+.header {
+  border-bottom: 1px solid #dde6ef;
+  padding: 2.5rem 0rem; }
+  .header .wrapper {
+    justify-content: space-between;
+    align-items: center; }
+  .header .search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .search-box .fa-search {
+      font-size: 2rem;
+      margin-right: 1.6rem; }
+    .header .search-box .search {
+      background-color: #fff;
+      border: none;
+      color: rgba(18, 18, 18, 0.5);
+      font-family: 'Roboto', sans-serif;
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      outline-width: 0;
+      padding: 1rem 0rem; }
+      .header .search-box .search::placeholder {
+        color: rgba(18, 18, 18, 0.5);
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 500; }
+  .header .logo-container a img {
+    height: 3.6rem; }
+  .header .bag-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .bag-area .account {
+      margin-right: 5rem; }

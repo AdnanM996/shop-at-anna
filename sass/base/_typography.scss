@@ -21,3 +21,18 @@ body {
         line-height: 1.6;
     }
 }
+
+.bag-area {
+    &--text {
+        color: $black;
+        display: block;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: capitalize;
+
+        & .fa-user, 
+        & .fa-shopping-bag {
+            margin-left: 1.6rem;
+        } 
+    }
+}
