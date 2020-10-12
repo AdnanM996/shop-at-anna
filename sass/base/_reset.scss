@@ -1,0 +1,24 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: $white;
+    height: 100%;
+    width: 100%;
+}
+
+.banner {
+    background-color: $black;
+    padding: 1rem 0rem;
+}
+
+.wrapper {
+    display: flex;
+    margin: 0% auto;
+    width: 90%;
+    max-width: 1350px;
+}
