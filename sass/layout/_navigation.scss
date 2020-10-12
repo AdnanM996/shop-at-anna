@@ -1,0 +1,35 @@
+.nav {
+    padding: $padding-small;
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        &:hover a:not(:hover) {
+            opacity: .5;
+        }
+    }
+
+    & li {
+        list-style: none;
+
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+
+        &:last-child a {
+            color: red;
+        }
+    }
+
+    & a {
+        color: $black;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s ease;
+
+        
+    }
+}

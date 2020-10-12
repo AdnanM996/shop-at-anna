@@ -55,7 +55,7 @@ body {
     margin-left: 1.6rem; }
 
 .header {
-  border-bottom: 1px solid #dde6ef;
+  border-bottom: 1px solid #e9e9de;
   padding: 2.5rem 0rem; }
   .header .wrapper {
     justify-content: space-between;
@@ -90,3 +90,29 @@ body {
     align-items: center; }
     .header .bag-area .account {
       margin-right: 5rem; }
+
+.nav {
+  padding: 2.5rem 0rem; }
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .nav ul:hover a:not(:hover) {
+      opacity: .5; }
+  .nav li {
+    list-style: none; }
+    .nav li:not(:last-child) {
+      margin-right: 3.5rem; }
+    .nav li:last-child a {
+      color: red; }
+  .nav a {
+    color: #121212;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease; }
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-color: #dde6ef; }
