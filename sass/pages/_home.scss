@@ -13,3 +13,22 @@
         margin: 0rem auto 2.5rem auto;
     }
 }
+
+.info-bar {
+    background-color: $dark-grey;
+    padding: $padding-medium;
+
+    & .wrapper {
+        @include space-between-center;
+        width: 70%;
+    }
+
+    &__item {
+        text-align: center;
+
+        & p {
+            line-height: 1.6;
+            margin-top: 1.5rem;
+        }
+    }
+}
