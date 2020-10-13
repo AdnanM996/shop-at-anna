@@ -2,7 +2,7 @@ window.addEventListener('scroll', ()=> {
     let wScroll = window.pageYOffset;
     let parallaxImg = document.querySelectorAll('.parallax-img');
     for(let i = 0; i < parallaxImg.length; i++) {
-        parallaxImg[i].style.transform = `translateY(${(-wScroll / 5) + 'px'})`;
+        parallaxImg[i].style.transform = `translateY(${(-wScroll / 10) + 'px'})`;
     }
 });
 

@@ -34,3 +34,29 @@
     display: flex;
     align-items: center;
 }
+
+.selected {
+    & .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+
+        &__item {
+            text-align: center;
+            display: flex;
+            @include space-between-center;
+            flex-direction: column;
+
+            &--2 {
+                & .selected__content {
+                    order: 2;
+                    margin: 2.5rem auto 0rem auto;
+                }
+
+                & .selected__img {
+                    order: 1;
+                }
+            }
+        }
+    }
+}

@@ -3,3 +3,13 @@
     width: 100%;
     background-color: $light-blue;
 }
+
+.selected {
+    margin-top: 6rem;
+    padding: $padding-extra-large;
+
+    &__content {
+        width: 80%;
+        margin: 0rem auto 2.5rem auto;
+    }
+}
