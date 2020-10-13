@@ -21,3 +21,5 @@ function showSlides() {
     slides[slideIdex-1].style.display = 'grid';
     setTimeout(showSlides, 7000);
 }
+
+//Slider

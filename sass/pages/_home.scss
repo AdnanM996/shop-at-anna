@@ -26,9 +26,36 @@
     &__item {
         text-align: center;
 
+        & .fa-paper-plane,
+        & .fa-lock,
+        & .fa-mobile-alt {
+            font-size: 2.5rem;
+        }
+
         & p {
             line-height: 1.6;
             margin-top: 1.5rem;
         }
     }
 }
+
+.new-in-shop {
+    padding: $padding-extra-large;
+    
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+.home-section-grid {
+    background-color: $very-light-grey;
+    padding: $padding-large;
+
+    & .wrapper {
+        justify-content: space-between;
+    }
+} 
