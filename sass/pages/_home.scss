@@ -58,4 +58,9 @@
     & .wrapper {
         justify-content: space-between;
     }
-} 
+}
+
+.articles {
+    background-color: $very-light-grey;
+    padding: $padding-medium;
+}
