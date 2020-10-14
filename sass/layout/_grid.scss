@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
+    width: 100%;
     align-items: center;
 
     &__content {
@@ -19,14 +20,8 @@
     &__img {
         overflow: hidden;
         transform: translateY(5rem);
-        height: 800px;
-        width: 100%;
-
-        & img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+        height: 720px !important;
+        width: 100%;  
     }
 }
 
@@ -37,6 +32,8 @@
 .slider__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .selected {
@@ -49,6 +46,7 @@
             display: flex;
             @include space-between-center;
             flex-direction: column;
+            height: 75rem;
 
             &--2 {
                 & .selected__content {

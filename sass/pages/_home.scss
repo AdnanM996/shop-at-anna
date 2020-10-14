@@ -4,6 +4,24 @@
     background-color: $light-blue;
 }
 
+.parallax {
+    &-parent {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+    }
+    &-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 .selected {
     margin-top: 6rem;
     padding: $padding-extra-large;
@@ -62,5 +80,10 @@
 
 .articles {
     background-color: $very-light-grey;
-    padding: $padding-medium;
+    padding: $padding-extra-large;
+
+    & .wrapper {
+        align-items: center;
+        justify-content: center;
+    }
 }

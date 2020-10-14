@@ -1,8 +1,12 @@
 window.addEventListener('scroll', ()=> {
     let wScroll = window.pageYOffset;
-    let parallaxImg = document.querySelectorAll('.parallax-img');
-    for(let i = 0; i < parallaxImg.length; i++) {
-        parallaxImg[i].style.transform = `translateY(${(-wScroll / 10) + 'px'})`;
+    let parallaxChild = document.querySelectorAll('.parallax-child');
+    let selectedParallaxChild = document.querySelectorAll('.selected .parallax-child');
+    for(let i = 0; i < parallaxChild.length; i++) {
+        parallaxChild[i].style.top = `${(wScroll / 12) + 'px'}`;
+    }
+    for(let i = 0; i < selectedParallaxChild.length; i++) {
+        selectedParallaxChild[i].style.top = `${(wScroll / 18) + 'px'}`;
     }
 });
 
