@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop At Anna</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/flickity/dist/flickity.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 </head>
@@ -168,7 +169,7 @@
             <a href="#" class="cta--empty">shop now</a>
             <button class="button button--left" id="newInShopBtnLeft"><i class="fas fa-arrow-left"></i></button>
             <button class="button button--right" id="newInShopBtnRight"><i class="fas fa-arrow-right"></i></button>
-            <div class="grid">
+            <div class="grid" data-flickity='{ "freeScroll": true }'>
 
                 <div class="grid__item grid__item--1 shop-product">
                     <a href="#" class="product">
@@ -286,7 +287,7 @@
     </section>
 
     <!--HOME SECTION GRID-->
-    <div class="home-section-grid">
+    <section class="home-section-grid">
         <div class="wrapper">
 
             <div class="grid">
@@ -301,21 +302,20 @@
                     <a href="#" class="cta">shop now</a>
                 </div>
 
-            </div>
-
-            <div class="grid">
-                <div class="grid__item grid__item--1">
+                <div class="grid__item grid__item--3">
                     <img src="images/section-img-2.jpg" alt="">
                 </div>
 
-                <div class="grid__item grid__item--2">
+                <div class="grid__item grid__item--4">
                     <h3>Weekend MaxMara</h3>
                     <p class="text">Effortless everyday essentials and timeless pieces to last you from season to season</p>
                     <a href="#" class="cta">shop now</a>
                 </div>
+
             </div>
+
         </div>
-    </div>
+    </section>
 
     <!--ANNAS PICKS-->
     <section class="new-in-shop">
@@ -530,5 +530,6 @@
         </div>
     </footer>
 <script src="js/index.js"></script>
+<script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

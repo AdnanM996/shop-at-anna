@@ -26,4 +26,6 @@ function showSlides() {
     setTimeout(showSlides, 7000);
 }
 
-//Slider
+//Products Slider
+
+
